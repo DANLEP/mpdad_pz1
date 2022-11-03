@@ -25,7 +25,7 @@ class Day:
 
         if len(row[20]) > 1:
             self.is_w_event = True
-        return row[0], row[2], row[8], row[14], row[18]
+        return row[0], row[2], row[8], row[14], row[17]
 
     def daily_income(self):
         return round(w1 * self.avg_temp + w2 * self.avg_hum + w3 * self.avg_vis + w4 * self.avg_wind, 2)
